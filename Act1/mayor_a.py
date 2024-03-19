@@ -28,10 +28,13 @@ i = int(argv[1])
 filtro = {}
 
 # Loop
-for k,v in ventas.items() :
-    if v > i :
-        salida = {k:v}
-        filtro.update(salida)
+# for k,v in ventas.items() :
+#     if v > i :
+#         salida = {k:v}
+#         filtro.update(salida)
+
+# Comprehension
+filtro = ({k:v} for k,v in ventas.items() if v > i)
 
 # Resultado
 print(filtro)
