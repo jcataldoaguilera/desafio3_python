@@ -23,13 +23,15 @@ ventas = {
 # Librerias
 from sys import argv
 
-#
+# Variables
 i = int(argv[1])
 filtro = {}
 
+# Loop
 for k,v in ventas.items() :
     if v > i :
         salida = {k:v}
         filtro.update(salida)
 
+# Resultado
 print(filtro)
