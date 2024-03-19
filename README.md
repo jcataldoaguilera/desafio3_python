@@ -1,4 +1,4 @@
-#Actividad 1 - Filtrado compacto
+# Actividad 1 - Filtrado compacto
 Una empresa provee de los balances del año anterior en un diccionario como se muestra a
 continuación:
 '''python
@@ -20,7 +20,7 @@ ventas = {
 El programa mayor_a.py debe retornar un diccionario con el mes y el valor asociado
 siempre y cuando superen el umbral especificado.
 
-#Actividad 2 - Primeros auxilios
+# Actividad 2 - Primeros auxilios
 En cualquier momento puede haber una emergencia y hay que estar preparados ¿sabrías
 cómo reaccionar en caso de que alguien necesite de primeros auxilios?
 Es muy probable que mucha gente no conozca cuáles son los pasos a seguir en caso de
@@ -31,7 +31,7 @@ sometido durante una emergencia.
 
 ![flow_diagram](./assets/img/act2_flowdiagram.png)
 
-#Actividad 3 - Fuerza bruta
+# Actividad 3 - Fuerza bruta
 ¿Qué tan seguro es tu password? ¿Intentemos hackear un password? Mediante el siguiente
 desafío se busca utilizar un algoritmo muy sencillo, llamado fuerza bruta para determinar
 cuántos intentos son necesarios para encontrar combinaciones numéricas en minúscula.
