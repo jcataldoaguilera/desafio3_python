@@ -1,7 +1,8 @@
 # Actividad 1 - Filtrado compacto
 Una empresa provee de los balances del año anterior en un diccionario como se muestra a
 continuación:
-'''python
+
+```python
 ventas = {
 "Enero": 15000,
 "Febrero": 22000,
@@ -16,11 +17,13 @@ ventas = {
 "Noviembre": 91000,
 "Diciembre": 21000,
 }
-'''
+```
+
 El programa mayor_a.py debe retornar un diccionario con el mes y el valor asociado
 siempre y cuando superen el umbral especificado.
 
 # Actividad 2 - Primeros auxilios
+
 En cualquier momento puede haber una emergencia y hay que estar preparados ¿sabrías
 cómo reaccionar en caso de que alguien necesite de primeros auxilios?
 Es muy probable que mucha gente no conozca cuáles son los pasos a seguir en caso de
@@ -31,24 +34,31 @@ sometido durante una emergencia.
 
 ![flow_diagram](./assets/img/act2_flowdiagram.png)
 
+
 # Actividad 3 - Fuerza bruta
+
 ¿Qué tan seguro es tu password? ¿Intentemos hackear un password? Mediante el siguiente
 desafío se busca utilizar un algoritmo muy sencillo, llamado fuerza bruta para determinar
 cuántos intentos son necesarios para encontrar combinaciones numéricas en minúscula.
 Para ello se ingresará un password oculto. Este password puede contener sólo
 combinaciones de letras y se requiere determinar su seguridad. Un mayor número de intentos
 implica un password más seguro:
+
 El programa fuerza_bruta.py debe intentar todas las combinaciones de letras posibles, en
 orden alfabético, hasta que la combinación de letras sea igual a la de la contraseña indicada.
 Deberá hacer este proceso letra por letra, de izquierda a derecha.
-Consideraciones
+
+## Consideraciones
+
 ● Utilizar from string import ascii_lowercase
 ○ ascii_lowercase es un string con todas las letras del abecedario en
 minúsculas (sin la ñ).
 ● No considerar la ñ.
 ● Considera mayúsculas y minúsculas como una misma letra.
 ● Se considera "intento" cada vez que se compara una letra.
-Ejemplo:
+
+### Ejemplo:
+
 ○ Usuario ingresa "abc"
 ○ El computador compara:
 ■ a es igual a a => Sí (1 intento), continúa con la siguiente letra.
@@ -60,8 +70,9 @@ Ejemplo:
 ■ No hay más letras. Se adivinó la palabra en 6 intentos.
 NOTA: A modo explicativo se mostrará la contraseña a buscar pero la idea es que ésta se
 ingrese de manera oculta.
-'''python
+
+```python
 python fuerza_bruta.py
 Ingrese la contraseña: gato
 La contraseña fue forzada en 43 intentos
-'''
+```
