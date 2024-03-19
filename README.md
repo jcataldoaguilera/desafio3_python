@@ -50,24 +50,24 @@ Deberá hacer este proceso letra por letra, de izquierda a derecha.
 
 ## Consideraciones
 
-● Utilizar from string import ascii_lowercase
+- Utilizar from string import ascii_lowercase
 ○ ascii_lowercase es un string con todas las letras del abecedario en
 minúsculas (sin la ñ).
-● No considerar la ñ.
-● Considera mayúsculas y minúsculas como una misma letra.
-● Se considera "intento" cada vez que se compara una letra.
+- No considerar la ñ.
+- Considera mayúsculas y minúsculas como una misma letra.
+- Se considera "intento" cada vez que se compara una letra.
 
 ### Ejemplo:
 
-○ Usuario ingresa "abc"
-○ El computador compara:
-■ a es igual a a => Sí (1 intento), continúa con la siguiente letra.
-■ b es igual a a => No (2 intentos), prueba otra comparación.
-■ b es igual a b => Sí (3 intentos), continúa con la siguiente letra.
-■ c es igual a a => No (4 intentos), prueba con otra comparación.
-■ c es igual a b => No (5 intentos), prueba con otra comparación.
-■ c es igual a c => Sí (6 intentos), continúa con la siguiente letra.
-■ No hay más letras. Se adivinó la palabra en 6 intentos.
+- Usuario ingresa "abc"
+- El computador compara:
++ a es igual a a => Sí (1 intento), continúa con la siguiente letra.
++ b es igual a a => No (2 intentos), prueba otra comparación.
++ b es igual a b => Sí (3 intentos), continúa con la siguiente letra.
++ c es igual a a => No (4 intentos), prueba con otra comparación.
++ c es igual a b => No (5 intentos), prueba con otra comparación.
++ c es igual a c => Sí (6 intentos), continúa con la siguiente letra.
++ No hay más letras. Se adivinó la palabra en 6 intentos.
 NOTA: A modo explicativo se mostrará la contraseña a buscar pero la idea es que ésta se
 ingrese de manera oculta.
 
