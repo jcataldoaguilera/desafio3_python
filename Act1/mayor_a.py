@@ -25,7 +25,7 @@ from sys import argv
 
 # Variables
 i = int(argv[1])
-filtro = {}
+# filtro = {}
 
 # Loop
 # for k,v in ventas.items() :
