@@ -3,3 +3,19 @@
 # Fecha: 2024-03-19
 # RLAB-23-02-09-0044-2
 #
+
+# Librerias
+from string import ascii_lowercase
+from getpass import getpass
+
+# Variables
+password = getpass("Ingrese la contraseña: ")
+intentos = 0
+# Loop
+for intento in ascii_lowercase :
+    if intento in password.strip():
+        intentos += 1
+    else:
+        intentos += 1
+
+print(f"La contraseña fue forzada en {intentos} intentos.")
