@@ -9,15 +9,14 @@ from string import ascii_lowercase
 from getpass import getpass
 
 # Variables
-password = getpass("Ingrese la contraseña: ")
-password = [*password]
+password = [*getpass("Ingrese la contraseña: ")]
 intentos = 0
+print(password)
 
 # Loop
 for i in ascii_lowercase :
-    if i in password:
-        intentos += 1
-    else :
+    if i in password :
+        print(i)
         intentos += 1
 
 print(f"La contraseña fue forzada en {intentos} intentos.")
