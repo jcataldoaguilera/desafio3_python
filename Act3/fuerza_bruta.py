@@ -25,4 +25,3 @@ for y in ascii_lowercase :
             intentos += 1
 
 print(f"La contraseña fue forzada en {intentos} intentos.")
-# print([*password])
