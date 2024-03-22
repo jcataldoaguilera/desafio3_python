@@ -9,7 +9,7 @@ from string import ascii_lowercase
 from getpass import getpass
 
 # Variables
-password = [*getpass("Ingrese la contraseña: ")]
+password = [*getpass("Ingrese la contraseña: ").lower]
 cracked = []
 intentos = 0
 
