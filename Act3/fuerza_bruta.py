@@ -12,18 +12,17 @@ from getpass import getpass
 password = [*getpass("Ingrese la contraseña: ")]
 cracked = []
 intentos = 0
-print(password)
 
 # Loop
 for y in ascii_lowercase :
+    if len(password) == len(cracked) :
+        break
     for z in password :
         if y == z :
             cracked.append(y)
             intentos += 1
         else :
             intentos += 1
-    if len(password) == len(cracked) :
-        break
 
 print(f"La contraseña fue forzada en {intentos} intentos.")
 # print([*password])
