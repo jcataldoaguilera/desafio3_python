@@ -10,14 +10,20 @@ from getpass import getpass
 
 # Variables
 password = [*getpass("Ingrese la contraseña: ")]
+cracked = []
 intentos = 0
 print(password)
 
 # Loop
-for i in ascii_lowercase :
-    if i in password :
-        print(i)
-        intentos += 1
+for y in ascii_lowercase :
+    for z in password :
+        if y == z :
+            cracked.append(y)
+            intentos += 1
+        else :
+            intentos += 1
+    if len(password) == len(cracked) :
+        break
 
 print(f"La contraseña fue forzada en {intentos} intentos.")
 # print([*password])
